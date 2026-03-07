@@ -18,3 +18,15 @@ const modalAuthor = document.getElementById("modalAuthor");
 const modalCreatedAt = document.getElementById("modalCreatedAt");
 const modalLabel = document.getElementById("modalLabel");
 const modalPriorityText = document.getElementById("modalPriorityText");
+let allIssues = [];
+let activeTab = "all";
+
+// ================= SHOW SPINNER =================
+function showSpinner() {
+  spinner.classList.remove("hidden");
+}
+
+// ================= HIDE SPINNER =================
+function hideSpinner() {
+  spinner.classList.add("hidden");
+}
